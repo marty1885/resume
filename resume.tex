@@ -53,6 +53,7 @@
 \usepackage{blindtext}
 \usepackage{pdfpages}
 \usepackage{changepage}
+\usepackage{calc}
 %----------------------------------------------------------------------------------------
 %	FONT BASICS
 %----------------------------------------------------------------------------------------
@@ -443,8 +444,8 @@
 			\cvsection{Education}
 
 			\cvmetaevent
-			{2015 - 2021}
-			{Computer science and engineering (B. Eng.)}
+			{2016 - 2021}
+			{Computer science and engineering (B. Sc.)}
 			{National Sun-Yet-Sen University\newline Special Talent Program}
 			{Graduation project: \glqq HTM based Agent in
 				standard RL Environment and Beefing up Framework Performance\grqq.}
@@ -517,7 +518,7 @@
 			\vspace{4pt}
 			
 			\cvtext{
-				I started coding at a very young age. With 13+ years of C++ experience. Now following the latest C++ standard and TS. I'm interested in HPC and systems programming. I am also an regular open source contributor. And an active maintainer of Drogon, one of the fastest web application framework. Currently learning the internals Unity and VR development. I'm confident in the diversity of my skill set and my ability to understand then fix freestanding bugs that I find.
+				I started coding at a very young age. With \pgfmathparse{int(\year - 2010)}\pgfmathresult+ years of C++ experience. Now following the latest C++ standard and TS. I'm interested in HPC and systems programming. I am also an regular open source contributor. And an active maintainer of Drogon, one of the fastest web application framework. Currently learning the internals Unity and VR development. I'm confident in the diversity of my skill set and my ability to understand then fix freestanding bugs that I find.
 			}
 			
 			
@@ -529,9 +530,15 @@
 			\cvsection{Work experience}
 			\vspace{4pt}
 			
+			\cvevent
+			{11/2023 - CURRENT}
+			{Senior Software Engineer}
+			{NVIDIA Corp}
+			{Developes software for the Omniverse project. Mostly in C++ and Python, integrating AI and non-conventional technology into the simulation pipeline. }
+			\vfill\null
 			
 			\cvevent
-			{01/2022 - CURRENT}
+			{01/2022 - 11/2023}
 			{Native Application Lead}
 			{Lumina Industries, Inc}
 			{Manages and leads our software team while also contributing to the codebase. As well as handling deployment to customer environments. Does pilot implementations to reduce workload on our engineering team.}
@@ -544,12 +551,12 @@
 			{Design high performance architecture for our core product, integrating modern C++17/20 technology our codebase. Introduces the team to modern tools like Sanitizers, FBInfer and cppcheck.}
 			\vfill\null
 			
-			\cvevent
-			{01/2016 - 08-2021}
-			{Research Assistant}
-			{Digital IP Lab, Department of CS, NSYSU}
-			{Leading the tech stack and does a variety of tasks. Including managing research server/cluster, optimize existing algorithms, apply AI to problems at hand. I also introduced the lab to tools like Address Sanitizer, C++14/17 as well as big data tools like ROOT. And moved all embedded development to Ubuntu/Arch Linux.}
-			\vfill\null
+			%\cvevent
+			%{01/2016 - 08-2021}
+			%{Research Assistant}
+			%{Digital IP Lab, Department of CS, NSYSU}
+			%{Leading the tech stack and does a variety of tasks. Including managing research server/cluster, optimize existing algorithms, apply AI to problems at hand. I also %introduced the lab to tools like Address Sanitizer, C++14/17 as well as big data %tools like ROOT. And moved all embedded development to Ubuntu/Arch Linux.}
+			%\vfill\null
 			
 			
 			\cvsection{Open source}
@@ -562,7 +569,7 @@
 				{MAINTAINER}
 				{Drogon - drogonframework/drogon}
 				{C++14/17/20 web application framework}
-				{Drogon is one of the fastest web application framework. I maintain and contributed core subsystems for the framework. Such as C++20 coroutine, HaikuOS support, Gemini protocol integration and the DrogonTest async test framework. I aslo maintain trantor - our transport library. Overhauled the TLS support and CSPRNG subsystem. Improves security and supproting modern standards.}
+				{Drogon is one of the fastest web application framework. I maintain and contributed core subsystems for the framework. Such as C++20 coroutine, HaikuOS support, Gemini protocol integration and the DrogonTest async test framework. I aslo maintain trantor - our transport library. Overhauled the TLS support and CSPRNG subsystem. Working on HTTP/2 support.}
 				\vfill\null
 				
 				\cvevent
