@@ -457,11 +457,11 @@
 			
 			\cvsection{Skills}
 			
-			\cvskill{C++} {12+ Yrs} {1} \\[-2pt]
+			\cvskill{C++} {13+ Yrs} {1} \\[-2pt]
 			
-			\cvskill{Linux} {10+ Yrs} {1} \\[-2pt]
+			\cvskill{Linux} {11+ Yrs} {1} \\[-2pt]
 			
-			\cvskill{Concurrent/HPC\newline programming} {6+ yrs.} {0.6} \\[-2pt]
+			\cvskill{Concurrent/HPC\newline programming} {7+ yrs.} {0.6} \\[-2pt]
 				
 			\cvskill{OpenCL} {4+ yrs.} {0.4} \\[-2pt]
 			
@@ -489,7 +489,8 @@
 			%\icontext{CaretRight}{12}{Offline rendering, PBR}{black}\\[6pt]
 			\icontext{CaretRight}{12}{Lua, Python, Common Lisp}{black}\\[6pt]
 			\icontext{CaretRight}{12}{Qt, PostgreSQL, GNUnet}{black}\\[6pt]
-			\icontext{CaretRight}{12}{Unity, Blender, VRChat SDK}{black}\\[6pt]
+			%\icontext{CaretRight}{12}{Unity, Blender, VRChat SDK}{black}\\[6pt]
+			\icontext{CaretRight}{12}{RK3588, GGML, Tenstorrent}{black}\\[6pt]
 
 			%\cvsection{Contact}
 			
@@ -518,7 +519,7 @@
 			\vspace{4pt}
 			
 			\cvtext{
-				I started coding at a very young age. With \pgfmathparse{int(\year - 2010)}\pgfmathresult+ years of C++ experience. Now following the latest C++ standard and TS. I'm interested in HPC and systems programming. I am also an regular open source contributor. And an active maintainer of Drogon, one of the fastest web application framework. Currently learning the internals Unity and VR development. I'm confident in the diversity of my skill set and my ability to understand then fix freestanding bugs that I find.
+				I started coding at a very young age. With \pgfmathparse{int(\year - 2010)}\pgfmathresult+ years of C++ experience. Now following the latest C++ standard and TS. I'm interested in HPC and systems programming. I am also an regular open source contributor. And an active maintainer of Drogon, one of the fastest web application framework. Currently working on porting AI accelerators to GGML like the RK3588 NPU and Tenstorrent Grayskull. I'm confident in the diversity of my skill set and my ability to understand then fix freestanding bugs that I find.
 			}
 			
 			
@@ -533,8 +534,8 @@
 			\cvevent
 			{11/2023 - CURRENT}
 			{Senior Software Engineer}
-			{NVIDIA Corp}
-			{Developes software for the Omniverse project. Mostly in C++ and Python, integrating AI and non-conventional technology into the simulation pipeline. }
+			{NVIDIA}
+			{Developes software for the Omniverse project. Mostly inferastructure in C++ and Python for our projects. As well as performance tuning and systems software.}
 			\vfill\null
 			
 			\cvevent
@@ -580,11 +581,18 @@
 				\vfill\null
 				
 				\cvevent
-				{AUTHOR}
-				{TLGS - marty1885/tlgs}
-				{Open source search engine for the Gemini protocol}
-				{An open source search engine for contents that is served over the Gemini protocol. Written the state of the art C++20 and uses the SALSA ranking algorithm. It is now one of the 3 major search engine in Gemini space. It can also serve content over the Spartan protocol.}
+				{CONTRIBUTOR}
+				{llama.cpp - marty1885/llama.cpp}
+				{LLaMA fork with RK3588 NPU support}
+				{This is an experimental fork that enables RK3588's NPU to be used for inference in LLaMA. Supports both FP16 and INT8 mode. My works starts a series of efforts to reverse engineer the RK3588 NPU as well as enabling other accelerator hardware to work with llama.cpp.}
 				\vfill\null
+				
+				%\cvevent
+				%{AUTHOR}
+				%{TLGS - marty1885/tlgs}
+				%{Open source search engine for the Gemini protocol}
+				%{An open source search engine for contents that is served over the Gemini protocol. Written the state of the art C++20 and uses the SALSA ranking algorithm. It is now one of the 3 major search engine in Gemini space. It can also serve content over the Spartan protocol.}
+				%\vfill\null
 			% hofixes to create fake-space to ensure the whole height is used
 			%\mbox{}
 			%\vfill
