@@ -68,7 +68,6 @@
 %\usepackage[default]{gillius}
 %\usepackage[light,math]{iwona}
 %\usepackage[thin]{roboto} 
-
 % set font default
 \renewcommand*\familydefault{\sfdefault} 	
 \usepackage[T1]{fontenc}
@@ -519,7 +518,7 @@
 			\vspace{4pt}
 			
 			\cvtext{
-				I started coding at a very young age. With \pgfmathparse{int(\year - 2010)}\pgfmathresult+ years of C++ experience. Now following the latest C++ standard and TS. I'm interested in HPC and systems programming. I am also an regular open source contributor. And an active maintainer of Drogon, one of the fastest web application framework. Currently working on porting AI accelerators to GGML like the RK3588 NPU and Tenstorrent Grayskull. I'm confident in the diversity of my skill set and my ability to understand then fix freestanding bugs that I find.
+				I started coding at a very young age. With \pgfmathparse{int(\year - 2010)}\pgfmathresult+ years of C++ experience. Now following the latest C++ standard and TS. I'm interested in HPC and systems programming. I am also an regular open source contributor. And an active maintainer of Drogon, one of the fastest web application framework. Currently working on porting AI accelerators to GGML like the RK3588 NPU and Tenstorrent processors. I'm confident in the diversity of my skill set and my ability to understand then fix freestanding bugs that I find.
 			}
 			
 			
@@ -532,31 +531,38 @@
 			\vspace{4pt}
 			
 			\cvevent
-			{11/2023 - CURRENT}
-			{Senior Software Engineer}
-			{NVIDIA}
-			{Developes software for the Omniverse project. Mostly inferastructure in C++ and Python for our projects. As well as performance tuning and systems software.}
+			{07/2024 - CURRENT}
+			{Senior Engineer}
+			{SatLayer}
+			{Help deliver our core SDK, manage partner engineering relationship and manages a a team of 4. Does research into existing protocol implementations and discover protocol limitations and system guarantees.}
 			\vfill\null
 			
 			\cvevent
-			{01/2022 - 11/2023}
+			{11/2023 - 07/2024}
+			{Senior Software Engineer}
+			{NVIDIA}
+			{Works on internal tools and package maintaince in the Omniverse project. Does a lot of cross-discipline communication and reading new, incoming/broken code.}
+			\vfill\null
+			
+			\cvevent
+			{09/2021 - 11/2023}
 			{Native Application Lead}
 			{Lumina Industries, Inc}
 			{Manages and leads our software team while also contributing to the codebase. As well as handling deployment to customer environments. Does pilot implementations to reduce workload on our engineering team.}
 			\vfill\null
 			
-			\cvevent
-			{09/2021 - 01/2022}
-			{C++/GPU Developer}
-			{Lumina Industries, Inc}
-			{Design high performance architecture for our core product, integrating modern C++17/20 technology our codebase. Introduces the team to modern tools like Sanitizers, FBInfer and cppcheck.}
-			\vfill\null
+			%\cvevent
+			%{09/2021 - 01/2022}
+			%{C++/GPU Developer}
+			%{Lumina Industries, Inc}
+			%{Design high performance architecture for our core product, integrating modern C++17/20 technology %our codebase. Introduces the team to modern tools like Sanitizers, FBInfer and cppcheck.}
+			%\vfill\null
 			
 			%\cvevent
 			%{01/2016 - 08-2021}
 			%{Research Assistant}
 			%{Digital IP Lab, Department of CS, NSYSU}
-			%{Leading the tech stack and does a variety of tasks. Including managing research server/cluster, optimize existing algorithms, apply AI to problems at hand. I also %introduced the lab to tools like Address Sanitizer, C++14/17 as well as big data %tools like ROOT. And moved all embedded development to Ubuntu/Arch Linux.}
+			%{Leading the tech stack. Managing research clusters, optimize existing algorithms, applied AI. Introduced tools like Address Sanitizer, C++14/17 and CERN ROOT. And moved all embedded development to Ubuntu/Arch Linux.}
 			%\vfill\null
 			
 			
@@ -566,11 +572,18 @@
 				Some especially notable projects that I am involved and did major contributions.
 			}
 			\vspace{4pt}
+								\cvevent
+				{AUTHOR}
+				{llama.cpp fork - marty1885/llama.cpp}
+				{LLaMA fork with NPU support}
+				{Experimental fork of the popular inference framework that enables non traditional accelerators. Currently the RK3588 NPU and Tenstorrent Wormhole/Grayskull processors are ported. This work  started efforts to reverse engineer the RK3588 NPU. The Tenstorrent is close to upstream ready and in talk for upstreaming.}
+				\vfill\null
+			
 				\cvevent
 				{MAINTAINER}
 				{Drogon - drogonframework/drogon}
 				{C++14/17/20 web application framework}
-				{Drogon is one of the fastest web application framework. I maintain and contributed core subsystems for the framework. Such as C++20 coroutine, HaikuOS support, Gemini protocol integration and the DrogonTest async test framework. I aslo maintain trantor - our transport library. Overhauled the TLS support and CSPRNG subsystem. Working on HTTP/2 support.}
+				{Drogon is one of the fastest web application framework. I maintain and contributed core subsystems for the framework. Such as C++20 coroutine, HaikuOS support, Gemini protocol integration and the DrogonTest async test framework. I aslo maintain trantor - our transport library. Overhauled the TLS support and CSPRNG subsystem. With an working HTTP/2 client implementation from scratch.}
 				\vfill\null
 				
 				\cvevent
@@ -579,13 +592,7 @@
 				{High performance HTM/tensor library}
 				{Etaler is a high performance implementation of Hierarchical Temporal Memory, a biologically inspired AI model by Numenta. At time of release, Etaler is more than 20x faster than the community developed HTM.core on CPU and 40x faster on a GPU. I'm also a trusted member of the HTM community.}
 				\vfill\null
-				
-				\cvevent
-				{CONTRIBUTOR}
-				{llama.cpp - marty1885/llama.cpp}
-				{LLaMA fork with RK3588 NPU support}
-				{This is an experimental fork that enables RK3588's NPU to be used for inference in LLaMA. Supports both FP16 and INT8 mode. My works starts a series of efforts to reverse engineer the RK3588 NPU as well as enabling other accelerator hardware to work with llama.cpp.}
-				\vfill\null
+
 				
 				%\cvevent
 				%{AUTHOR}
